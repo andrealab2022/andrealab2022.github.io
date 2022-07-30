@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://kyoto-kitcho.com/en/files/img/restaurant/arashiyama/img_topphoto_sp_02.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    height: 641px;
+    width: 600px;
+}
+
+.recupp{
+    width: 320px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 33px;
+}
+
+h1{
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 5px;
+    padding: 150px;
+    margin-left: 420px;
+}
+.recupp p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.recupp input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.recupp input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 25px;
+    color: #fff;
+    font-size: 16px;
+}
+.recupp input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.recupp input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: black;
+    color:white;
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://cdn.foodandwineespanol.com/2021/07/tips-hacer-sushi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.logo h2{
+    font-size: 30px;
+    color: white;
+    font-size: 'Pattaya', sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 40px 100px;
+}
+
+.nav_items,.nav_items2{
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.nav_items li,
+.nav_items2 li{
+    margin-right: 80px;
+}
+
+.nav_items a,
+.nav_items2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero .contenido{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.contenido p,
+.contenido h3{
+    color: white;
+    text-transform: uppercase;
+}
+
+.contenido p{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 60px;
+    letter-spacing: 6px;
+}
+
+.contenido h3{
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+@keyframes scrollDown{
+    0%{
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 1;
+    }
+
+    100%{
+        top: 80%;
+    }
+}
+
+.scroll_down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: 16%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll_down::before,
+.scroll_down::after{
+    content:"";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrollDown 1s ease-in-out infinite;
+}
+
+.scroll_down::after{
+    top: 30%;
+}

@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://i.pinimg.com/originals/fa/5b/ff/fa5bffaeafe14fc071105049cccc07b9.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    height: 656px;
+    width: 655px;
+}
+
+.logg{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.logg p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.logg input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.logg input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.logg input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.logg input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: black;
+    color:white;
+}
+
+.logg a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.logg a:hover
+{
+    color: #39dc79;
+}
